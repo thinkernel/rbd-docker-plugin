@@ -8,6 +8,53 @@ We attempt to adhere to [Semantic Versioning](http://semver.org/).
 ### Removed
 ### Changed
 
+## [1.5.0] - 2016-09-01
+### Added
+- Updated plugin to include Capabilities() method and new method
+  signatures for Mount(MountRequest) and Unmount(UnmountRequest)
+- add xfs filesystem check before mount - if xfs-repair -n returns
+  error, Mount operation fails with note to manually repair
+
+## [1.4.1] - 2016-08-05
+### Changed
+- Bug fix from bad upstream merge: provide openContext and
+  shutdownContext
+
+## [1.4.0] - 2016-08-05
+### Added
+- Merged upstream fixes for pull porcupie/rbd-docker-plugin#7
+
+## [1.3.0] - 2016-08-05
+### Added
+- Added goroutines and timeouts to all shell commands, hoping to prevent
+  propagation of hung external procs to docker daemon
+
+## [1.2.2] - 2016-06-08
+### Changed
+- Docker is calling Unmount after failed Mount, causing trouble if
+  device is still in use by another container (locked by same node).
+The workaround / hack is to bail earlier in Unmount API call if rbd
+unmap fails with busy device error. This can leave the device usable but
+possibly in a funky state (unmounted from host but still mounted and
+accessible inside container)
+- related to porcupie/rbd-docker-plugin#5
+
+## [1.2.1] - 2016-06-02
+### Changed
+- When rbd map does not return device name but no error, try default
+  device path (/dev/rbd/<pool>/<image>). Issue porcupie/rbd-docker-plugin#4
+
+## [1.2.0] - 2016-06-02
+### Added
+- Updated to pull in yp-engineering/rbd-docker-plugin v0.9.1.2, which
+  includes support for Docker Volume Create options: size, pool, fstype
+
+## [1.1.1] - 2016-04-15
+### Changed
+- Due to issue with golang 1.6 and strict Host header requirements, we
+  cannot use golang 1.6 to compile our plugin since docker never sends
+  correct Host header for plugin socket usage.
+  * Recompiled with golang 1.5
 
 ## [1.1.0] - 2016-04-15
 ### Added
