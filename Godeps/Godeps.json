@@ -1,6 +1,6 @@
 {
 	"ImportPath": "github.com/porcupie/rbd-docker-plugin",
-	"GoVersion": "go1.6",
+	"GoVersion": "go1.5",
 	"GodepVersion": "v65",
 	"Deps": [
 		{
@@ -10,8 +10,8 @@
 		},
 		{
 			"ImportPath": "github.com/Sirupsen/logrus",
-			"Comment": "v0.10.0-16-gcd7d1bb",
-			"Rev": "cd7d1bbe41066b6c1f19780f895901052150a575"
+			"Comment": "v0.10.0-28-ga283a10",
+			"Rev": "a283a10442df8dc09befd873fab202bf8a253d6a"
 		},
 		{
 			"ImportPath": "github.com/ceph/go-ceph/rados",
@@ -23,56 +23,36 @@
 		},
 		{
 			"ImportPath": "github.com/coreos/go-systemd/activation",
-			"Comment": "v5-1-gf0fc421",
-			"Rev": "f0fc421064ab8f21a16c102f78c3140d361d7c7e"
+			"Comment": "v6-2-g7d19429",
+			"Rev": "7d194297e298225b7040f433ba43ec7cc69b4d70"
 		},
 		{
 			"ImportPath": "github.com/coreos/go-systemd/util",
-			"Comment": "v5-1-gf0fc421",
-			"Rev": "f0fc421064ab8f21a16c102f78c3140d361d7c7e"
+			"Comment": "v6-2-g7d19429",
+			"Rev": "7d194297e298225b7040f433ba43ec7cc69b4d70"
 		},
 		{
-			"ImportPath": "github.com/docker/distribution/registry/api/errcode",
-			"Comment": "v2.4.0-rc.0-2-g687fc1e",
-			"Rev": "687fc1e164845f5b716f39bcef19e4833cf1c1f9"
-		},
-		{
-			"ImportPath": "github.com/docker/docker/errors",
-			"Comment": "v1.10.3",
-			"Rev": "20f81dde9bd97c86b2d0e33bbbf1388018611929"
-		},
-		{
-			"ImportPath": "github.com/docker/docker/pkg/system",
-			"Comment": "v1.10.3",
-			"Rev": "20f81dde9bd97c86b2d0e33bbbf1388018611929"
-		},
-		{
-			"ImportPath": "github.com/docker/docker/volume",
-			"Comment": "v1.10.3",
-			"Rev": "20f81dde9bd97c86b2d0e33bbbf1388018611929"
+			"ImportPath": "github.com/coreos/pkg/dlopen",
+			"Comment": "v1",
+			"Rev": "160ae6282d8c48a33d8c150e4e4817fdef8a5cde"
 		},
 		{
 			"ImportPath": "github.com/docker/go-connections/sockets",
-			"Comment": "v0.2.0-4-g5b7154b",
-			"Rev": "5b7154ba2efe13ff86ae8830a9e7cb120b080d6e"
+			"Comment": "v0.2.1-2-g0bad1a3",
+			"Rev": "0bad1a3951398f88ef4dd75fdb42af374430be89"
 		},
 		{
 			"ImportPath": "github.com/docker/go-plugins-helpers/sdk",
-			"Rev": "726bdcf4333dc9bd02860d7397a4ab4797864ea5"
+			"Rev": "8f6a7e66062c5a7d19174e8ecfbe1befbb38b676"
 		},
 		{
 			"ImportPath": "github.com/docker/go-plugins-helpers/volume",
-			"Rev": "726bdcf4333dc9bd02860d7397a4ab4797864ea5"
-		},
-		{
-			"ImportPath": "github.com/docker/go-units",
-			"Comment": "v0.3.0",
-			"Rev": "5d2041e26a699eaca682e2ea41c8f891e1060444"
+			"Rev": "8f6a7e66062c5a7d19174e8ecfbe1befbb38b676"
 		},
 		{
 			"ImportPath": "github.com/opencontainers/runc/libcontainer/user",
-			"Comment": "v0.1.1-89-gbe46e64",
-			"Rev": "be46e644f6f26ce2f4ad0890791b2a1428300ae2"
+			"Comment": "v1.0.0-rc1-117-gae7a92e",
+			"Rev": "ae7a92e352116f38bce3f7cb3aa2bc590a7e3f65"
 		},
 		{
 			"ImportPath": "github.com/stretchr/testify/assert",
@@ -84,11 +64,11 @@
 		},
 		{
 			"ImportPath": "golang.org/x/net/proxy",
-			"Rev": "e0403b4e005737430c05a57aac078479844f919c"
+			"Rev": "07b51741c1d6423d4a6abab1c49940ec09cb1aaf"
 		},
 		{
 			"ImportPath": "golang.org/x/sys/unix",
-			"Rev": "50c6bc5e4292a1d4e65c6e9be5f53be28bcbe28e"
+			"Rev": "a646d33e2ee3172a661fc09bca23bb4889a41bc8"
 		}
 	]
 }
